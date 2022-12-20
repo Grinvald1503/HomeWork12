@@ -1,5 +1,7 @@
 package HomeWork7;
 
+import java.util.Objects;
+
 public class Author {
     private String name;
     private String surName;
@@ -16,6 +18,8 @@ public class Author {
     public String getSurName() {
         return this.surName;
     }
+
+
 }
 
 
