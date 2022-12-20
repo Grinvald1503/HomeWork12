@@ -29,6 +29,24 @@ public class Book {
 
         yearPublication = year;
     }
+    @Override
+    public String toString() {
+        return "Название книги " + this.nameBook + ", год выпуска " + this.yearPublication + ", автор книги: " + this.author;
+    }
 
+    @Override
+    public boolean equals(Object book) {
+        if (this.getClass() !=book.getClass()) {
+            return false;
+        }
+        Book book2 = (Book) book;
+
+
+        return nameBook.equals(book2.nameBook);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(nameBook);
+    }
 }
 

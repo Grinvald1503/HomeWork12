@@ -18,6 +18,8 @@ public class Main {
 
         deadSouls.setYearPublication(1843);
         System.out.println("Год публикации " + deadSouls.getYearPublication());
-
+        System.out.println(dubrovski);
+        System.out.println(dubrovski.equals(deadSouls));
+        System.out.println(alex.equals(nikolai));
     }
 }
